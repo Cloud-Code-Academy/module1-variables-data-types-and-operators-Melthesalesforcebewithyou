@@ -32,7 +32,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        return null; // Replace null with the variable you used to store the result
+        //check if either number is null
+        if (a == null || b == null) {
+            return null; //return null if either number is null
+        } // then perform addition and return the result 
+        return a + b; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -44,7 +48,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer total = a - b; 
+        return total; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -56,7 +61,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer result = a * b;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -69,7 +75,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        if ( b == 0) {
+            return 0;
+        }
+        Integer result = a / b;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
