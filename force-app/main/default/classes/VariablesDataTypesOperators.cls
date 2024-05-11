@@ -75,6 +75,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
+        //check if the denominator is 0, if yes then return 0
         if ( b == 0) {
             return 0;
         }
@@ -93,7 +94,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        //check if number is even or odd using math.mod() is equal to zero 
+        //if equals to zero, return Boolean value of true
+        if (Math.mod(num, 2) == 0){
+            return True; 
+        }
+        return False; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -104,7 +110,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        // check if positive aka > 0, if yes then return Boolean True
+        if (num > 0) {
+            return True;
+        }
+        return False; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -116,7 +126,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        return null; // Replace null with the variable you used to store the result
+        // add with +
+        return str1 + str2; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -131,7 +142,9 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+        // 'The' + noun + 'is' + verb + endingPunctuation
+        String sentence = 'The' + ' ' + noun + ' ' + 'is' + ' ' + verb + endingPunctuation;
+		return sentence; // Replace null with the variable you used to store the result
 	}
 
     /**
