@@ -193,9 +193,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
+        final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
         Integer milliseconds;
-        return null; // Replace null with the variable you used to store the result
+        return minutes * MILLISECONDS_PER_MINUTE; // Replace null with the variable you used to store the result
     }    
 
     /**
@@ -209,7 +209,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        return null; // Replace null with the variable you used to store the result
+        // AVG = (a + b + c) / 3
+        Double avg = (a + b + c) / 3;
+        return avg; // Replace null with the variable you used to store the result
     }
 
     /**
