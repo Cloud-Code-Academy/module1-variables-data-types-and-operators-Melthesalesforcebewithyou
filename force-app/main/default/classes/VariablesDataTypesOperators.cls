@@ -96,9 +96,9 @@ public with sharing class VariablesDataTypesOperators {
         //check if number is even or odd using math.mod() is equal to zero 
         //if equals to zero, return Boolean value of true
         if (Math.mod(num, 2) == 0){
-            return True; 
+            return true; 
         }
-        return False; // Replace null with the variable you used to store the result
+        return false; // Replace null with the variable you used to store the result
     }
 
     /**
