@@ -33,8 +33,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer addition(Integer a, Integer b) {  
         //check if either number is null
-        if (a == null || b == null) {
-            return null; //return null if either number is null
+        
+        return null; //return null if either number is null
         } // then perform addition and return the result 
         return a + b; // Replace null with the variable you used to store the result
     }
@@ -48,8 +48,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        Integer total = a - b; 
-        return total; // Replace null with the variable you used to store the result
+        
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -61,7 +61,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return a * b; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -75,11 +75,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal division(Integer a, Integer b) {
         //check if the denominator is 0, if yes then return 0
-        if ( b == 0) {
-            return 0;
-        }
-        Integer result = a / b;
-        return result; // Replace null with the variable you used to store the result
+        
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -95,10 +92,8 @@ public with sharing class VariablesDataTypesOperators {
     public static Boolean isEven(Integer num) {
         //check if number is even or odd using math.mod() is equal to zero 
         //if equals to zero, return Boolean value of true
-        if (Math.mod(num, 2) == 0){
-            return true; 
-        }
-        return false; // Replace null with the variable you used to store the result
+        
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -110,10 +105,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isPositive(Integer num) {
         // check if positive aka > 0, if yes then return Boolean True
-        if (num > 0) {
-            return True;
-        }
-        return False; // Replace null with the variable you used to store the result
+    }
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -126,7 +119,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static String concatenateStrings(String str1, String str2) {
         // add with +
-        return str1 + str2; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
 	/**
@@ -157,10 +150,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isDateInPast(Date dt) {
         // check if date < TODAY()
-        if (dt < date.TODAY()) {
-            return True;
-        }
-        return False; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -176,10 +166,7 @@ public with sharing class VariablesDataTypesOperators {
         // check if date = today or > today
         //return True if dt = TODAY || > TODAY
         //return False if otherwise 
-        if (dt == date.today() || dt > date.today()) {
-            return TRUE;
-        }
-        return False; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -192,9 +179,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        final Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
-        Integer milliseconds;
-        return minutes * MILLISECONDS_PER_MINUTE; // Replace null with the variable you used to store the result
+        
+        return ; // Replace null with the variable you used to store the result
     }    
 
     /**
@@ -209,8 +195,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
         // AVG = (a + b + c) / 3
-        Double avg = (a + b + c) / 3;
-        return avg; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -225,9 +210,8 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer adjustOrderOfOperations1(Integer a, Integer b, Integer c) {
         // Add parentheses around the addition operation so that it is performed before multiplication
-        Integer result = (a + b) * c;
         // Return the result
-        return result; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -239,8 +223,7 @@ public with sharing class VariablesDataTypesOperators {
         // Add parentheses in the below expression to change the result.
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
-        Integer answer = 48 - (15 + 5) * 2;
-        return answer; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -259,8 +242,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = (a * b - c) / (Double) d + e;
-        return result; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -271,12 +253,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The temperature in Celsius equivalent to the given Fahrenheit temperature.
      */
     public static Double convertFahrenheitToCelsius(Double fahrenheit) {
-        final Double SUBTRACT_FACTOR = 32.0;
-        final Double MULTIPLY_FACTOR = 5.0;
-        final Double DIVIDE_FACTOR = 9.0;
         // Celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE FACTOR
-        Double celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
-        return celsius; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     
@@ -292,12 +270,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Integer performDivisionAndCast(Double a, Double b) {
         // Perform the division and cast (round down) off the result.
-        Double divisionResult = a / b;
-
+        
         // Write the code for type casting the divisionResult to an Integer
         // Change initial datatype 
-        Integer roundedResult = (Integer) divisionResult;
-        return roundedResult; // Replace null with the variable you used to store the result
+        
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -311,8 +288,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        Decimal weeklyPay = hourlyRate * numberOfHours;
-        return weeklyPay; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -327,9 +303,7 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         final Decimal WEEKS_PER_MONTH = 4;
-        Decimal weeklyPay = hourlyRate * numberOfHours; 
-        Decimal monthlyPay = weeklyPay * WEEKS_PER_MONTH;
-        return monthlyPay; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -344,7 +318,6 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Decimal calculateTotalCost(Decimal pricePerUnit, Integer numberOfUnits, Decimal salesTaxRate) {
         // totalCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate)
-        Decimal totalCost = (pricePerUnit * numberOfUnits) * (1 + salesTaxRate);
-        return totalCost; // Replace null with the variable you used to store the result
+        return ; // Replace null with the variable you used to store the result
     }
 }
